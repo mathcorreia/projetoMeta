@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLW Agents</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <header>
+        <img src="./assets/Sports.png" alt="Logo sports NLW">
+    </header>
+
+    <main>
+        <section>
+            <div>
+                <h2 class="title">Assistente de Meta</h2>
+                <p>Pergunte sobre estratégias, build e dicas para seus jogos!</p>
+
+                <form id="form">
+                    <input id="apiKey" type="password" placeholder="Informe a API KEY do Gemini" required>
+
+                    <select id="gameSelect">
+                        <option value="">Selecione um jogo</option>
+                        <option value="valorant">Valorant</option>
+                        <option value="lol">League of Legends</option>
+                        <option value="cs">CS:GO</option>
+                        <option value="dota">Dota 2</option>
+                        <option value="fortnite">Fortnite</option>
+                        <option value="apex">Apex Legends</option>
+                        <option value="overwatch">Overwatch</option>
+                        <option value="fifa">FIFA</option>
+                        <option value="cod">Call of Duty</option>
+                        <option value="rocket-league">Rocket League</option>
+                        <option value="pubg">PUBG</option>
+                        <option value="rainbow-six">Rainbow Six Siege</option>
+                        <option value="genshin-impact">Genshin Impact</option>
+                        <option value="mobile-legends">Mobile Legends</option>
+                        <option value="clash-royale">Clash Royale</option>
+                        <option value="clash-of-clans">Clash of Clans</option>
+                        <option value="diablo-4">Diablo 4</option>
+                        <option value="star-citizen">Star Citizen</option>
+                        <option value="world-of-warcraft">World of Warcraft</option>
+                        <option value="final-fantasy-xiv">Final Fantasy XIV</option>
+                        <option value="skyrim">Skyrim</option>
+                        <option value="dark-souls">Dark Souls</option>
+                        <option value="dark-souls-2">Dark Souls 2</option>
+                        <option value="dark-souls-3">Dark Souls 3</option>
+                        <option value="bloodborne">Bloodborne</option>
+                        <option value="sekiro">Sekiro</option>
+                        <option value="elden-ring">Elden Ring</option>
+                        <option value="elden-ring-nightreign">Elden Ring Nightreign</option>
+
+                        
+                    </select>
+
+                    <input id="questionInput" type="text" placeholder="Ex: Melhor build para ADC..." required>
+                    <button id="askButton">Perguntar</button>
+                </form>
+
+                <div id="aiResponse" class="hidden">
+                    <div class="response-content">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
